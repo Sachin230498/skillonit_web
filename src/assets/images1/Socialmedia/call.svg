@@ -1,0 +1,30 @@
+<svg width="66" height="95" viewBox="0 0 66 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="66" height="95" fill="#1E1E1E"/>
+<g id="MacBook Air - 1" clip-path="url(#clip0_0_1)">
+<rect width="1280" height="720" transform="translate(0 -309)" fill="white"/>
+<g id="Group 1597883213">
+<g id="Group 1597883206" filter="url(#filter0_b_0_1)">
+<circle id="Ellipse 146" cx="18.2029" cy="47.8249" r="46.9841" fill="#427DF5" fill-opacity="0.1"/>
+<g id="Communication / Phone" clip-path="url(#clip1_0_1)">
+<g id="Icon Frame">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M11.8566 32.1631C7.33843 32.1631 3.0086 35.9867 4.27925 40.9779C6.86978 51.1536 14.8766 59.1605 25.0524 61.751C30.0436 63.0217 33.8672 58.6918 33.8672 54.1737V52.4805C33.8672 50.5726 32.3415 49.1868 30.6506 49.0192C29.2356 48.879 27.8787 48.5453 26.6057 48.0453C25.9789 47.7991 25.2658 47.9478 24.7895 48.424L23.0929 50.1207C20.0859 48.4378 17.5925 45.9444 15.9096 42.9374L17.6062 41.2407C18.0824 40.7645 18.2311 40.0514 17.9849 39.4245C17.485 38.1516 17.1513 36.7947 17.011 35.3796C16.8434 33.6888 15.4576 32.1631 13.5497 32.1631H11.8566Z" fill="#427DF5"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_b_0_1" x="-45.9664" y="-16.3444" width="128.339" height="128.338" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="8.59259"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_1" result="shape"/>
+</filter>
+<clipPath id="clip0_0_1">
+<rect width="1280" height="720" fill="white" transform="translate(0 -309)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="40.6349" height="40.6349" fill="white" transform="matrix(-1 0 0 1 38.9453 27.084)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,57 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.c-not-allowed {
+    cursor: not-allowed !important;
+}
+
+.c-not-allowed:hover {
+    text-decoration: none !important;
+}
+
+.eapps-widget:hover .eapps-widget-toolbar {
+    display: none !important;
+}
+
+.ibnJBQ>a {
+    display: none !important;
+}
+
+.eqZPsd {
+    font-size: 57px !important;
+    font-weight: 400 !important;
+    margin-bottom: 0 !important;
+    color: #002a6a !important;
+    letter-spacing: -0.05em !important;
+    line-height: 100% !important;
+    text-align: center !important;
+}
+
+button,
+button:active,
+button:focus {
+    outline: none !important;
+}
+
+@media (max-width: 991px) {
+    .eqZPsd {
+        font-size: 35px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .eqZPsd {
+        font-size: 30px !important;
+    }
+
+    .dialog {
+        padding-left: 0px !important;
+    }
+}

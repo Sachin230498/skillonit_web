@@ -1,0 +1,368 @@
+.home-training {
+    width: 90%;
+    max-height: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.home-training .home-training-head {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-training .h-text-2 {
+    color: #002A6A;
+    text-align: center;
+    font-size: calc(52px + 18 * (100vw - 320px) / 1080) !important;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -2.9px;
+}
+
+.home-training .s-text-1 {
+    color: #427DF5;
+}
+
+.custom-home .h-text-2 {
+    color: #002A6A;
+    text-align: center;
+    font-size: calc(52px + 18 * (100vw - 320px) / 1080) !important;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -2.9px;
+}
+
+.custom-home .s-text-1 {
+    color: #427DF5 !important;
+}
+
+.custom-home .s-text-2 {
+    color: #002A6A;
+    text-align: center;
+    font-size: calc(19px + 7 * (100vw - 320px) / 1080) !important;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1.82px;
+    margin-top: 10px !important;
+}
+
+.custom-home .custom-btn-explore {
+    min-width: 179px !important;
+    height: 52px !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+    font-size: 18px !important;
+}
+
+.custom-home .c-p-text {
+    margin-top: 30px !important;
+    color: #747474 !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+
+.home-training .s-text-2 {
+    color: #002A6A;
+    text-align: center;
+    font-size: calc(19px + 7 * (100vw - 320px) / 1080);
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1.82px;
+}
+
+.home-training .p-text-1 {
+    color: #747474;
+    text-align: center;
+    font-size: 20px !important;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -1.0px;
+    margin-top: 20px !important;
+}
+
+.home-training .home-training-body {
+    width: 100%;
+    max-height: 100%;
+}
+
+.home-training .progress-card {
+    width: 100%;
+    height: 669px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 20px 140px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 63px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.home-training .progress-card .progress-card-img {
+    width: 100%;
+    height: 100%;
+    max-height: 323px;
+    background: #f3f3f1;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.home-training .progress-card .progress-card-img-1 {
+    width: 209px;
+    height: 250px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transform: translate(0%, 0%);
+    z-index: 1;
+}
+
+.home-training .progress-card .progress-card-img-2 {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    transform: translate(0%, 0%);
+    z-index: 2;
+}
+
+.home-training .progress-card-bars {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.home-training .progress-bar-group {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.home-training .progress-label {
+    color: #002A6A;
+    font-size: calc(15px + 5 * (100vw - 320px) / 1080);
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -1.4px;
+}
+
+.home-training .progress-bar-group-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+
+.home-training .progress-bar {
+    width: 100%;
+    height: 15px;
+    border-radius: 7.217px;
+    background: #F5F5F5;
+    padding: 3px;
+}
+
+.home-training .progress-bar .progress-fill {
+    height: 100%;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.home-training .progress-bar .available-jobs {
+    width: 75%;
+    background-color: #00B2FF;
+}
+
+.home-training .progress-bar .match-rate {
+    width: 93%;
+    background-color: #427DF5;
+}
+
+.home-training .progress-bar .success-apply {
+    width: 98%;
+    background-color: #438700;
+}
+
+.home-training .progress-percentage {
+    color: #002A6A;
+    font-size: calc(15px + 5 * (100vw - 320px) / 1080);
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -1.4px;
+}
+
+.home-training .progress-content {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 37px;
+}
+
+.home-training .progress-content-head {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.home-training .progress-content-head .h-text-3 {
+    color: #002A6A;
+    font-size: calc(52px + 18 * (100vw - 320px) / 1080);
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -4.9px;
+}
+
+.home-training .progress-content-head .s-text-3 {
+    color: #427DF5;
+}
+
+.home-training .progress-content-body {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.home-training .progress-content-body-card {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 25.472px;
+    background: #FFF;
+    box-shadow: 0px 20px 134.7px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 33px;
+}
+
+.home-training .s-text-4 {
+    color: #427DF5;
+    font-size: calc(15px + 5 * (100vw - 320px) / 1080);
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -1.4px;
+}
+
+.home-training .progress-content-body-card .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-training .progress-content-body-card .content p {
+    color: #747474;
+    font-size: calc(15px + 5 * (100vw - 320px) / 1080);
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -1.4px;
+}
+
+.home-training .progress-content-body-card .cta-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-training .progress-content-body-card .cta-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.home-training p {
+    margin: 0px !important;
+}
+
+@media (max-width: 991px) {
+    .home-training .break {
+        display: none !important;
+    }
+
+    .home-training {
+        margin-top: 150px;
+    }
+
+    .home-training .progress-content-body-card {
+        gap: 12px;
+    }
+
+    .home-training .progress-card .progress-card-img-2 {
+        width: 360px;
+        transform: translate(0%, 2%);
+    }
+
+    .custom-home .s-text-2 {
+        margin-top: 10px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-training {
+        width: 100%;
+        margin-top: 100px;
+        padding: 0 10px;
+    }
+
+    .home-training .progress-card {
+        height: 500px;
+        gap: 40px;
+        padding: 10px;
+    }
+
+    .home-training .progress-card .progress-card-img {
+        max-height: 220px;
+    }
+
+    .home-training .progress-card-bars {
+        gap: 15px;
+    }
+
+    .home-training .progress-card .progress-card-img-1 {
+        width: 150px;
+    }
+
+    .custom-home .c-p-text {
+        font-size: 16px !important;
+    }
+
+    .home-training .p-text-1 {
+        font-size: 16px !important;
+    }
+}
