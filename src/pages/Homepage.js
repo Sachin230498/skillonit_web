@@ -39,6 +39,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import HomeTraining from "../components/common/HomeTraining";
 import ReviewCarousel from "../components/common/ReviewCarousel";
+import SkilledIndiaSection from "../components/common/SkilledIndiaSection";
+import CourseGrid from "../components/common/CourseGrid";
 
 Notiflix.Confirm.init({
   okButtonBackground: "#3572ef",
@@ -316,183 +318,197 @@ const Homepage = ({ handleOpen }) => {
 
               <div className="swiper-pagination"></div>
             </Swiper>
-             <div className="section-1-content custom-home">
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                e.preventDefault();
-                handleSubmit(onSubmit)();
-              }
-            }}
-          >
-            <div className="certification-form-div">
-              <div className="c-form-left">
-                <img src={badgeimg} alt="badge" />
-              </div>
-              <div className="c-form-right">
-                <h6 className="c-text-1">Verify Your Certificate</h6>
+            <div className="section-1-content custom-home">
+              <form
+                onSubmit={handleSubmit(onSubmit)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    e.preventDefault();
+                    handleSubmit(onSubmit)();
+                  }
+                }}
+              >
+                <div className="certification-form-div">
+                  <div className="c-form-left">
+                    <img src={badgeimg} alt="badge" />
+                  </div>
+                  <div className="c-form-right">
+                    <h6 className="c-text-1">Verify Your Certificate</h6>
 
-                <div className="input-group">
-                  <Controller
-                    name="dateOfBirth"
-                    control={control}
-                    defaultValue=""
-                    render={({ field }) => (
-                      <input
-                        {...field}
-                        type="date"
-                        className="form-control"
-                        placeholder="Date of Birth"
+                    <div className="input-group">
+                      <Controller
+                        name="dateOfBirth"
+                        control={control}
+                        defaultValue=""
+                        render={({ field }) => (
+                          <input
+                            {...field}
+                            type="date"
+                            className="form-control"
+                            placeholder="Date of Birth"
+                          />
+                        )}
                       />
+                    </div>
+                    {errors.dateOfBirth && (
+                      <p className="error-message-1">DOB is required</p>
                     )}
-                  />
-                </div>
-                {errors.dateOfBirth && (
-                  <p className="error-message-1">DOB is required</p>
-                )}
 
-                <div className="input-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Enter User ID/Certificate Serial Number"
-                    {...register("certificateNumber")}
-                  />
-                  <span className="input-group-text">
-                    <button type="submit" className="btn-in-submit">
-                      Submit
-                    </button>
-                  </span>
+                    <div className="input-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Enter User ID/Certificate Serial Number"
+                        {...register("certificateNumber")}
+                      />
+                      <span className="input-group-text">
+                        <button type="submit" className="btn-in-submit">
+                          Submit
+                        </button>
+                      </span>
+                    </div>
+                    {errors.certificateNumber && (
+                      <p className="error-message-1">
+                        {errors.certificateNumber.message}
+                      </p>
+                    )}
+                  </div>
                 </div>
-                {errors.certificateNumber && (
-                  <p className="error-message-1">
-                    {errors.certificateNumber.message}
-                  </p>
-                )}
+              </form>
+
+              <h1
+                className="h-text-2  "
+                style={{
+                  textAlign:"left"
+                }}
+              >
+                <span className="s-text-1">Vidarbha’s 1st ever</span>  IT Academy
+              </h1>
+              <div
+                className=" text-[#427DF5] text-[28px] font-bold text-left-home "
+                 
+              >
+                Unlocking Rural India's Potential with IT Skills
+              </div>
+              {/* <span className="s-text-2">in Buldhana, Maharashtra</span> */}
+              <p className="center-p c-p-text hidden">
+                SkillonIT stands as Vidarbha’s first IT academy, offering
+                industry-focused IT training courses in Buldhana, Maharashtra.{" "}
+                <br className="break t-break" /> Designed to equip aspiring
+                professionals with in-demand IT skills, our expert-led courses
+                ensure career-ready expertise.
+              </p>
+              <div className="btn-section-1">
+                <Link
+                  to="/courses"
+                  className="btn-explore custom-btn-explore"
+                  reloadDocument
+                >
+                  Explore Courses
+                </Link>
+                <button
+                  className="btn-explore custom-btn-explore"
+                  onClick={() => handleOpen()}
+                >
+                  Enroll Now
+                </button>
+              </div>
+              <div className="button-section-playstore">
+                <div className="btn-tooltip-container">
+                  <button className="btn-store">
+                    <img
+                      src={appstoremob}
+                      className="app-store-img"
+                      alt="appstore"
+                    />
+                  </button>
+                  <span className="tooltip-text">Coming Soon</span>
+                </div>
+                <div className="btn-tooltip-container">
+                  <button className="btn-store">
+                    <img
+                      src={playstoremob}
+                      className="app-store-img"
+                      alt="playstore"
+                    />
+                  </button>
+                  <span className="tooltip-text">Coming Soon</span>
+                </div>
               </div>
             </div>
-          </form>
-
-          <h1 className="h-text-2  " 
-          // style={{
-          //   textAlign:"left"
-          // }}
-          >
-            <span className="s-text-1">Vidarbha’s</span> First IT Academy
-          </h1>
-          <span className="s-text-2">in Buldhana, Maharashtra</span>
-          <p className="center-p c-p-text hidden">
-            SkillonIT stands as Vidarbha’s first IT academy, offering
-            industry-focused IT training courses in Buldhana, Maharashtra.{" "}
-            <br className="break t-break" /> Designed to equip aspiring
-            professionals with in-demand IT skills, our expert-led courses
-            ensure career-ready expertise.
-          </p>
-          <div className="btn-section-1">
-            <Link
-              to="/courses"
-              className="btn-explore custom-btn-explore"
-              reloadDocument
-            >
-              Explore Courses
-            </Link>
-            <button
-              className="btn-explore custom-btn-explore"
-              onClick={() => handleOpen()}
-            >
-              Enroll Now
-            </button>
-          </div>
-          <div className="button-section-playstore">
-            <div className="btn-tooltip-container">
-              <button className="btn-store">
-                <img
-                  src={appstoremob}
-                  className="app-store-img"
-                  alt="appstore"
-                />
-              </button>
-              <span className="tooltip-text">Coming Soon</span>
-            </div>
-            <div className="btn-tooltip-container">
-              <button className="btn-store">
-                <img
-                  src={playstoremob}
-                  className="app-store-img"
-                  alt="playstore"
-                />
-              </button>
-              <span className="tooltip-text">Coming Soon</span>
-            </div>
-          </div>
-        </div>
           </div>
           <div className="  col-span-2">
- <div className="max-w-md mt-14 lg:mt-0 mx-auto px-5 text-sm font-medium">
-      <div className="rounded-t-2xl bg-gradient-to-r from-[#009dff] to-[#00c3ff] text-white text-center py-3 text-[14px] font-semibold">
-        book a free ⚡ demo class
-      </div>
+            <div className="max-w-md mt-36 lg:mt-0 mx-auto px-5 text-sm font-medium  ">
+              <div className="rounded-t-2xl bg-gradient-to-r from-[#009dff] to-[#00c3ff] text-white text-center py-3 text-[14px] font-semibold">
+                book a free ⚡ demo class
+              </div>
 
-      <form className="flex flex-col gap-3 mt-4">
-        <input
-          type="text"
-          placeholder="Name"
-          className="rounded-md px-4 py-2 bg-[#f4f7fa] outline-none text-[#00c3ff]"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          className="rounded-md px-4 py-2 bg-[#f4f7fa] outline-none text-[#00c3ff]"
-        />
-        <div className="flex items-center gap-2 bg-[#f4f7fa] rounded-md px-4 py-2">
-          <span className="flex items-center gap-1 text-gray-600">
-            🇮🇳 +91
-          </span>
-          <input
-            type="tel"
-            placeholder="Phone Number"
-            className="flex-1 bg-transparent outline-none text-[#00c3ff]"
-          />
-        </div>
+              <form className="flex flex-col gap-3 py-4 px-3 shadow rounded-b-xl">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="rounded-md px-4 py-2 bg-[#f4f7fa] outline-none text-[#00c3ff]"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="rounded-md px-4 py-2 bg-[#f4f7fa] outline-none text-[#00c3ff]"
+                />
+                <div className="flex items-center gap-2 bg-[#f4f7fa] rounded-md px-4 py-2">
+                  <span className="flex items-center gap-1 text-gray-600">
+                    🇮🇳 +91
+                  </span>
+                  <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    className="flex-1 bg-transparent outline-none text-[#00c3ff]"
+                  />
+                </div>
 
-        <div className="relative">
-          <select className="w-full rounded-md px-4 py-2 bg-[#f4f7fa] appearance-none outline-none text-[#00c3ff]">
-            <option>Course you are interested in</option>
-          </select>
-          <FaChevronDown className="absolute top-3 right-4 text-gray-500" />
-        </div>
+                <div className="relative">
+                  <select className="w-full rounded-md px-4 py-2 bg-[#f4f7fa] appearance-none outline-none text-[#00c3ff]">
+                    <option>Course you are interested in</option>
+                  </select>
+                  <FaChevronDown className="absolute top-3 right-4 text-gray-500" />
+                </div>
 
-        <div className="mt-1">
-          <span className="text-[11px] text-blue-500 px-1">Learning Mode</span>
-          <div className="flex justify-between items-center rounded-md bg-[#f4f7fa] text-[#00c3ff] px-4 py-2 mt-1">
-            <label className="flex items-center gap-2">
-              <input type="radio" name="mode" defaultChecked />
-              <span>Online</span>
-            </label>
-            <label className="flex items-center gap-2">
-              <input type="radio" name="mode" />
-              <span>Offline</span>
-            </label>
+                <div className="mt-1">
+                  <span className="text-[11px] text-blue-500 px-1">
+                    Learning Mode
+                  </span>
+                  <div className="flex justify-between items-center rounded-md bg-[#f4f7fa] text-[#00c3ff] px-4 py-2 mt-1">
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="mode" defaultChecked />
+                      <span>Online</span>
+                    </label>
+                    <label className="flex items-center gap-2">
+                      <input type="radio" name="mode" />
+                      <span>Offline</span>
+                    </label>
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  className="mt-3 bg-[#009dff] hover:bg-[#0086d4] text-white py-2 rounded-md transition"
+                >
+                  Sign Up
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-
-        <button
-          type="submit"
-          className="mt-3 bg-[#009dff] hover:bg-[#0086d4] text-white py-2 rounded-md transition"
-        >
-          Sign Up
-        </button>
-      </form>
-    </div>
-          </div>
-        </div>
-       
       </section>
 
       <section className="home-section-2"></section>
       <section className="home-section-3">
         <ReviewCarousel />
+      </section>
+      <section className="home-section-3">
+        <SkilledIndiaSection />
+      </section>
+      <section className="home-section-3">
+        <CourseGrid />
       </section>
       <section className="home-section-3">
         <HomeTraining />
