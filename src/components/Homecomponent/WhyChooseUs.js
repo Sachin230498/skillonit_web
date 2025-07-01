@@ -68,17 +68,14 @@ const WhyChooseUs = () => {
   return (
     <section className="home-section-7">
       <h2 className="h-text-2">
-        Why SkillonIT is Your Best Choice for IT Learning?
+        What Our Students Say
       </h2>
       <p className="center-p  center-p-margin">
-        Join SkillonIT for guaranteed internships, expert mentorship, and job
-        assistance
-        <br className="break t-break" />
-        to achieve your dream role. Our market-focused curriculum and flexible
-        payment plans make
-        <br className="break t-break" />
-        top-quality IT education accessible for all.
+        Real experiences. Real transformations.
       </p>
+      <p className="text-sm sm:text-base text-gray-700 mt-4   ">
+            Hear directly from our students about their learning journey at SkillonIT. From gaining practical skills to landing their first job, these stories reflect the real impact of quality IT education.
+          </p>
       <div className="sec7-slider-section">
         <div className="section7-slider-section">
           <Swiper

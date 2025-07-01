@@ -41,6 +41,8 @@ import HomeTraining from "../components/common/HomeTraining";
 import ReviewCarousel from "../components/common/ReviewCarousel";
 import SkilledIndiaSection from "../components/common/SkilledIndiaSection";
 import CourseGrid from "../components/common/CourseGrid";
+import LearningGallery from "../components/common/LearningGallery";
+import TestimonialSlider from "../components/common/TestimonialSlider";
 
 Notiflix.Confirm.init({
   okButtonBackground: "#3572ef",
@@ -318,7 +320,7 @@ const Homepage = ({ handleOpen }) => {
 
               <div className="swiper-pagination"></div>
             </Swiper>
-            <div className="section-1-content custom-home">
+            <div className="px-16  custom-home">
               <form
                 onSubmit={handleSubmit(onSubmit)}
                 onKeyDown={(e) => {
@@ -328,7 +330,7 @@ const Homepage = ({ handleOpen }) => {
                   }
                 }}
               >
-                <div className="certification-form-div">
+                {/* <div className="certification-form-div">
                   <div className="c-form-left">
                     <img src={badgeimg} alt="badge" />
                   </div>
@@ -373,7 +375,7 @@ const Homepage = ({ handleOpen }) => {
                       </p>
                     )}
                   </div>
-                </div>
+                </div> */}
               </form>
 
               <h1
@@ -382,7 +384,7 @@ const Homepage = ({ handleOpen }) => {
                   textAlign:"left"
                 }}
               >
-                <span className="s-text-1">Vidarbha’s 1st ever</span>  IT Academy
+                <span className="s-text-1">Vidarbha’s 1st ever</span> <br/>  IT Academy
               </h1>
               <div
                 className=" text-[#427DF5] text-[28px] font-bold text-left-home "
@@ -398,7 +400,7 @@ const Homepage = ({ handleOpen }) => {
                 professionals with in-demand IT skills, our expert-led courses
                 ensure career-ready expertise.
               </p>
-              <div className="btn-section-1">
+              <div className=" flex  flex-wrap mt-2 gap-2">
                 <Link
                   to="/courses"
                   className="btn-explore custom-btn-explore"
@@ -413,7 +415,7 @@ const Homepage = ({ handleOpen }) => {
                   Enroll Now
                 </button>
               </div>
-              <div className="button-section-playstore">
+              {/* <div className="button-section-playstore">
                 <div className="btn-tooltip-container">
                   <button className="btn-store">
                     <img
@@ -434,16 +436,16 @@ const Homepage = ({ handleOpen }) => {
                   </button>
                   <span className="tooltip-text">Coming Soon</span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="  col-span-2">
-            <div className="max-w-md mt-36 lg:mt-0 mx-auto px-5 text-sm font-medium  ">
+            <div className="max-w-md mt-36 lg:mt-2 mx-auto px-5 text-sm font-medium  ">
               <div className="rounded-t-2xl bg-gradient-to-r from-[#009dff] to-[#00c3ff] text-white text-center py-3 text-[14px] font-semibold">
                 book a free ⚡ demo class
               </div>
 
-              <form className="flex flex-col gap-3 py-4 px-3 shadow rounded-b-xl">
+              <form className="flex flex-col gap-4 py-4 px-3 shadow rounded-b-xl">
                 <input
                   type="text"
                   placeholder="Name"
@@ -510,11 +512,19 @@ const Homepage = ({ handleOpen }) => {
       <section className="home-section-3">
         <CourseGrid />
       </section>
-      <section className="home-section-3">
-        <HomeTraining />
+      <section className=" ">
+        <LearningGallery />
+      </section>
+      <section className=" ">
+        {/* <TestimonialSlider /> */}
       </section>
 
-      <section className="home-section-4">
+
+      <section className=" ">
+        {/* <HomeTraining /> */}
+      </section>
+
+      {/* <section className="home-section-4">
         <div className="rating-section">
           <div className="rating-head">
             <div className="rating-text">
@@ -738,11 +748,11 @@ const Homepage = ({ handleOpen }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <CustomCourses swiperRef={swiperRef} allcourse={allcourse} />
+      {/* <CustomCourses swiperRef={swiperRef} allcourse={allcourse} /> */}
 
-      <section className="home-section-6">
+      {/* <section className="home-section-6">
         <h2 className="h-text-2">Explore Learning That Fits Your Goals</h2>
         <p className="center-p center-p-margin">
           Access self-paced courses, live interactive classes, and personalized
@@ -752,27 +762,13 @@ const Homepage = ({ handleOpen }) => {
           <br className="break" /> and join a premium network for career growth.
         </p>
 
-        {/* <div className="offer-card-section">
-          <div className="row g-4">
-            {offerData.map((offer, index) => (
-              <div className="col-lg-4 col-md-6 col-12" key={index}>
-                <div className="card offer-card">
-                  <img
-                    src={offer.imgSub}
-                    className="offer-card-img"
-                    alt="offer"
-                  />                 
-                </div>
-              </div>
-            ))}
-          </div>
-        </div> */}
+        
         <ExploreSection />
-      </section>
+      </section> */}
 
       <WhyChooseUs />
 
-      <section className="home-section-8">
+      {/* <section className="home-section-8">
         <h2 className="h-text-2">
           Real Stories, Real Success: <br className="break" /> SkillonIT Alumni
           Achievements
@@ -786,9 +782,9 @@ const Homepage = ({ handleOpen }) => {
           Join us to achieve your success story!
         </p>
         <SuccessStories />
-      </section>
+      </section> */}
 
-      <section className="home-section-10">
+      {/* <section className="home-section-10">
         <h2 className="h-text-2">
           Your Path to Career Success
           <br className="break" /> Clear Roadmap to IT Excellence
@@ -942,20 +938,20 @@ const Homepage = ({ handleOpen }) => {
           </div>
           <div></div>
         </div>
-      </section>
+      </section> */}
 
-      <Partner />
+      {/* <Partner /> */}
 
-      <section className="home-section-12">
+      {/* <section className="home-section-12">
         <h2 className="h-text-2">
           Our Graduates Make an Impact at Leading Firms
         </h2>
         <div className="company-logo-section">
           <img src={logoBg} alt="logo" className="total-logo-bg" />
         </div>
-      </section>
+      </section> */}
 
-      <ContactUs />
+      {/* <ContactUs /> */}
 
       {/* <section className="home-section-gr">
         <div className="elfsight-app-6aa10c8b-623d-4850-adcf-cf7d0a3bfb52" data-elfsight-app-lazy></div>
