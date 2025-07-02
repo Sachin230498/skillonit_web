@@ -1,9 +1,10 @@
 import React from "react";
 import { FaHeart } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay ,FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import 'swiper/css/free-mode';
 
 const reviewers = [
   {
@@ -48,24 +49,39 @@ const reviewers = [
       "https://storage.googleapis.com/a1aa/image/d8fe3c02-83f6-4aa3-963b-2028c77860e5.jpg",
     bg: "bg-[#E0F3FF]",
   },
+  {
+    name: "Datta Thakre",
+    role: "Blockchain, Malgo",
+    image:
+      "https://storage.googleapis.com/a1aa/image/51bf86dc-ef00-41e7-f65c-d9c82aa80a5f.jpg",
+    bg: "bg-[#E0F3FF]",
+  },
 ];
 
 const ReviewCarousel = () => {
   return (
-    <div className="p-4 max-w-7xl mx-auto w-full">
+    <div className="p-4 max-w-8xl mx-auto w-full">
       <Swiper
         spaceBetween={16}
         loop={true}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-        modules={[Autoplay]}
+        freeMode={true}
+        freeModeMomentum={false}
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: false,
+        }}
+        speed={10000} // Lower value = faster, higher = slower
+        modules={[Autoplay, FreeMode]}
         breakpoints={{
           320: { slidesPerView: 1 },
           480: { slidesPerView: 1.5 },
           640: { slidesPerView: 2 },
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },
-          1280: { slidesPerView: 5 },
+          1280: { slidesPerView: 6 },
         }}
+        allowTouchMove={false}
       >
         {reviewers.map((reviewer, idx) => (
           <SwiperSlide key={idx}>
@@ -78,7 +94,9 @@ const ReviewCarousel = () => {
                 className="w-16 h-16 sm:w-18 sm:h-18 rounded-xl object-cover"
               />
               <div className="text-sm text-left     text-nowrap">
-                <div className="font-semibold text-[#0071E3]">{reviewer.name}</div>
+                <div className="font-semibold text-[#0071E3]">
+                  {reviewer.name}
+                </div>
                 <div className="text-gray-500 text-xs">{reviewer.role}</div>
                 <div className="flex items-center justify-center sm:justify-start  space-x-1">
                   <FaHeart className="text-red-600 text-sm" />

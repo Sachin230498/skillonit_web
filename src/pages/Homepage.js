@@ -381,15 +381,13 @@ const Homepage = ({ handleOpen }) => {
               <h1
                 className="h-text-2  "
                 style={{
-                  textAlign:"left"
+                  textAlign: "left",
                 }}
               >
-                <span className="s-text-1">Vidarbha’s 1st ever</span> <br/>  IT Academy
+                <span className="s-text-1">Vidarbha’s 1st ever</span> <br /> IT
+                Academy
               </h1>
-              <div
-                className=" text-[#427DF5] text-[28px] font-bold text-left-home "
-                 
-              >
+              <div className=" text-[#427DF5] text-[28px] font-bold text-left-home ">
                 Unlocking Rural India's Potential with IT Skills
               </div>
               {/* <span className="s-text-2">in Buldhana, Maharashtra</span> */}
@@ -515,14 +513,9 @@ const Homepage = ({ handleOpen }) => {
       <section className=" ">
         <LearningGallery />
       </section>
-      <section className=" ">
-        {/* <TestimonialSlider /> */}
-      </section>
+      <section className=" ">{/* <TestimonialSlider /> */}</section>
 
-
-      <section className=" ">
-        {/* <HomeTraining /> */}
-      </section>
+      <section className=" ">{/* <HomeTraining /> */}</section>
 
       {/* <section className="home-section-4">
         <div className="rating-section">
@@ -956,6 +949,13 @@ const Homepage = ({ handleOpen }) => {
       {/* <section className="home-section-gr">
         <div className="elfsight-app-6aa10c8b-623d-4850-adcf-cf7d0a3bfb52" data-elfsight-app-lazy></div>
       </section> */}
+
+      <div className="text-center font-bold my-20">
+        <div className="text-[#0F1F3E] text-6xl ">Your Gateway to</div>
+        <div className="text-8xl h-32   mt-4 bg-gradient-to-r from-[#0E8DE9] to-[#29D1FD] bg-clip-text text-transparent">
+          Digital Excellence
+        </div>
+      </div>
     </div>
   );
 };

@@ -66,13 +66,13 @@ const CourseGrid = () => {
   return (
     <div className="min-h-screen max-w-7xl bg-white py-10 px-4 md:px-4">
       <div className=" text-center my-20">
-        <p className="text-lg sm:text-xl font-semibold text-[#00a6ff] mt-2">
+        <p className="text-[28px] font-semibold text-[#00a6ff] mt-2">
           From Basics to Brilliance
         </p>
-        <h1 className="text-3xl sm:text-5xl font-extrabold text-gray-900">
+        <h1 className="text-[63px] font-extrabold text-gray-900">
           Start Learning Now
         </h1>
-        <p className="text-sm sm:text-base text-gray-700 mt-4 max-w-2xl mx-auto">
+        <p className="text-[15px] text-gray-700 mt-4 max-w-2xl mx-auto">
           From foundational concepts to advanced skills, our courses are
           designed to guide you every step of the way.Join us and turn your
           curiosity into a career in the world of IT.
@@ -98,14 +98,14 @@ const CourseGrid = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl sm:text-4xl font-bold mb-2 text-gray-900">
+                <h3 className="text-[40px] font-bold mb-2 text-gray-900">
                   {course.title}
                 </h3>
                 <div className="flex flex-wrap gap-2 mb-3">
                   {course.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="text-xs bg-gray-50 text-[#1CB0F6] px-2 py-1 rounded-full shadow-sm"
+                      className="text-[12px] bg-gray-50 text-[#1CB0F6] px-2 py-1 rounded-full shadow-sm"
                     >
                       {tag}
                     </span>
@@ -117,11 +117,11 @@ const CourseGrid = () => {
 
             {/* Bottom half content */}
             <div className="flex flex-col justify-between px-4  ">
-              <div className="bg-[#E8A615] w-fit px-3 text-sm p-1 my-2 rounded-full">
+              <div className="bg-[#E8A615] w-fit px-3 text-[12px] p-1 my-2 rounded-full">
                   Beginner to advanced
                 </div>
               <div>
-                <p className="text-lg text-gray-700">{course.description}</p>
+                <p className="text-[19px] text-gray-700">{course.description}</p>
               </div>
 
               <button className=" bg-[#00A6FF] hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full">

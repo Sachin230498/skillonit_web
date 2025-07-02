@@ -40,11 +40,11 @@ const LearningGallery = () => {
     <div className="max-w-7xl mx-auto px-5 py-10">
       {/* Header Section */}
       <div className="text-center mb-10">
-        <h2 className="h-text-2">Where Learning Comes to Life</h2>
-        <span className="s-text-2">
+        <h2 className="text-[63px] font-bold bg-gradient-to-r from-[#0E8DE9] to-[#29D1FD] bg-clip-text text-transparent">Where Learning Comes to Life</h2>
+        <span className="text-[28px] font-semibold text-[#0F1F3E] mt-2">
           "A visual journey through our events and activities"
         </span>
-        <p className="p-text-1 mt-4">
+        <p className="text-[19px] text-[#0F1F3E] mt-4">
           Explore the journey of SkillonIT through snapshots of our past events,
           training sessions, student activities, and behind-the-scenes glimpses
           of our institute.
@@ -127,19 +127,29 @@ const LearningGallery = () => {
           </div>
         </div>
 
+             
         <div className="lg:col-span-1">
-          {/* Right-side 3 static images */}
-          <div className="grid grid-cols-1   gap-3">
-            {galleryImages.slice(0, 3).map((img) => (
-              <div key={img.id}>
+          {/* Right-side vertical swiper with 3 visible images */}
+          <Swiper
+            direction="vertical"
+            slidesPerView={3}
+            spaceBetween={10}
+            loop={true}
+            autoplay={{ delay: 2000, disableOnInteraction: false , reverseDirection: true,}}
+            style={{ height: "520px" }} // Adjust height as needed
+            modules={[Autoplay]}
+            className="rounded-lg  "
+          >
+            {galleryImages.map((img) => (
+              <SwiperSlide key={img.id}>
                 <img
                   src={img.src}
                   alt={img.alt}
                   className="w-full h-40 object-cover rounded-lg"
                 />
-              </div>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
       </div>
     </div>

@@ -4,13 +4,13 @@ const SkilledIndiaSection = () => {
   return (
     <section className="w-full max-w-7xl mt-20 px-4">
       <div className=" text-center ">
-        <h1 className="text-3xl sm:text-5xl font-extrabold text-gray-900">
+        <h1 className="text-[63px] font-extrabold text-gray-900">
           Building a Skilled India
         </h1>
-        <p className="text-lg sm:text-xl font-semibold text-[#00a6ff] mt-2">
+        <p className="text-[28px] font-bold text-[#00a6ff] mt-2">
           Your Gateway to Digital Excellence
         </p>
-        <p className="text-sm sm:text-base text-gray-700 mt-4 max-w-2xl mx-auto">
+        <p className="text-[19px] text-gray-700 mt-4 max-w-2xl mx-auto">
           SkillonIT stands as Vidarbha’s first IT academy, offering industry-focused IT training courses in Buldhana, Maharashtra.
           Designed to equip aspiring professionals with in-demand IT skills, our expert-led courses ensure career-ready expertise.
         </p>

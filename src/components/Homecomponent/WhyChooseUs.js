@@ -67,13 +67,13 @@ const WhyChooseUs = () => {
 
   return (
     <section className="home-section-7">
-      <h2 className="h-text-2">
+      <h2 className="text-[63px] font-extrabold text-[#0F1F3E] text-center">
         What Our Students Say
       </h2>
-      <p className="center-p  center-p-margin">
+      <p className="text-[28px] font-semibold text-[#00a6ff] text-center mt-2">
         Real experiences. Real transformations.
       </p>
-      <p className="text-sm sm:text-base text-gray-700 mt-4   ">
+      <p className="text-[19px] text-[#0F1F3E] max-w-7xl  text-center mx-auto ">
             Hear directly from our students about their learning journey at SkillonIT. From gaining practical skills to landing their first job, these stories reflect the real impact of quality IT education.
           </p>
       <div className="sec7-slider-section">
