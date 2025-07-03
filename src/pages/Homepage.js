@@ -383,13 +383,13 @@ const Homepage = ({ handleOpen }) => {
               </form>
 
               <h1
-                className="h-text-2  "
+                className=" font-extrabold text-[63px]"
                 style={{
                   textAlign: "left",
                 }}
               >
-                <span className=" ">Vidarbha’s 1st ever</span> <br /> IT
-                Academy
+                <span className=" text-[#0F1F3E]">Vidarbha’s 1st ever</span> <br /><span className=" text-[#0F1F3E]"> IT
+                Academy</span>
               </h1>
               <div className=" bg-gradient-to-r from-[#0E8DE9] to-[#29D1FD] bg-clip-text text-transparent text-[28px] font-bold text-left-home ">
                 Unlocking Rural India's Potential with IT Skills
@@ -505,7 +505,7 @@ const Homepage = ({ handleOpen }) => {
         </div>
       </section>
 
-      <section className="home-section-2"></section>
+      {/* <section className="home-section-2"></section> */}
       <section className="home-section-3">
         <ReviewCarousel />
       </section>
@@ -764,7 +764,7 @@ const Homepage = ({ handleOpen }) => {
         <ExploreSection />
       </section> */}
 
-      {/* <TestimonialCarousel /> */}
+      <TestimonialCarousel />
       {/* <WhyChooseUs /> */}
 
       {/* <section className="home-section-8">

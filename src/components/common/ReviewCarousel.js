@@ -172,7 +172,7 @@ const reviewers = [
 
 const ReviewCarousel = () => {
   return (
-    <div className="p-4 max-w-8xl mx-auto w-full">
+    <div className="p-4 mt-3 max-w-8xl mx-auto w-full">
       <Marquee
         gradient={false}
         speed={40}
