@@ -60,3 +60,19 @@ button:focus {
 .text-left-home{
     text-align: left !important;
 }
+
+
+    .marquee-down {
+      display: flex;
+      flex-direction: column;
+      animation: scroll-down 20s linear infinite;
+    }
+
+    @keyframes scroll-down {
+      0% {
+        transform: translateY(-50%);
+      }
+      100% {
+        transform: translateY(0%);
+      }
+    }

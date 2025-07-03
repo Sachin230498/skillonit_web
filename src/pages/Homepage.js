@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaChevronDown } from "react-icons/fa";
 import { FaIndia } from "react-icons/fa6";
+import {  Select} from "antd";
+
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -43,6 +45,7 @@ import SkilledIndiaSection from "../components/common/SkilledIndiaSection";
 import CourseGrid from "../components/common/CourseGrid";
 import LearningGallery from "../components/common/LearningGallery";
 import TestimonialSlider from "../components/common/TestimonialSlider";
+import TestimonialCarousel from "../components/common/TestimonialCarousel";
 
 Notiflix.Confirm.init({
   okButtonBackground: "#3572ef",
@@ -216,8 +219,9 @@ const Homepage = ({ handleOpen }) => {
   return (
     <div className="homepage">
       <section className="home-section-1">
-        <div className=" lg:grid grid-cols-6">
-          <div className="col-span-4  ">
+        <div className=" px-5">
+        <div className=" xl:grid grid-cols-7">
+          <div className="col-span-5  ">
             <Swiper
               pagination={{
                 el: ".swiper-pagination",
@@ -243,7 +247,7 @@ const Homepage = ({ handleOpen }) => {
                   <img
                     src="/banner-1.svg"
                     alt="banner"
-                    className="banner-img-alter mobile-hide"
+                    className="banner-img-alter mobile-hide "
                   />
                   <img
                     src="/m-banner-1.svg"
@@ -384,10 +388,10 @@ const Homepage = ({ handleOpen }) => {
                   textAlign: "left",
                 }}
               >
-                <span className="s-text-1">Vidarbha’s 1st ever</span> <br /> IT
+                <span className=" ">Vidarbha’s 1st ever</span> <br /> IT
                 Academy
               </h1>
-              <div className=" text-[#427DF5] text-[28px] font-bold text-left-home ">
+              <div className=" bg-gradient-to-r from-[#0E8DE9] to-[#29D1FD] bg-clip-text text-transparent text-[28px] font-bold text-left-home ">
                 Unlocking Rural India's Potential with IT Skills
               </div>
               {/* <span className="s-text-2">in Buldhana, Maharashtra</span> */}
@@ -406,12 +410,12 @@ const Homepage = ({ handleOpen }) => {
                 >
                   Explore Courses
                 </Link>
-                <button
+                {/* <button
                   className="btn-explore custom-btn-explore"
                   onClick={() => handleOpen()}
                 >
                   Enroll Now
-                </button>
+                </button> */}
               </div>
               {/* <div className="button-section-playstore">
                 <div className="btn-tooltip-container">
@@ -438,45 +442,45 @@ const Homepage = ({ handleOpen }) => {
             </div>
           </div>
           <div className="  col-span-2">
-            <div className="max-w-md mt-36 lg:mt-2 mx-auto px-5 text-sm font-medium  ">
-              <div className="rounded-t-2xl bg-gradient-to-r from-[#009dff] to-[#00c3ff] text-white text-center py-3 text-[14px] font-semibold">
+            <div className="max-w-md  xl:w-full mt-36  lg:mt-2 mx-auto pr-0 lg:pr-16 text-sm font-medium  ">
+              <div className="rounded-t-2xl bg-gradient-to-r from-[#009dff] to-[#00c3ff] text-white text-center py-3 text-[20px] font-semibold">
                 book a free ⚡ demo class
               </div>
 
-              <form className="flex flex-col gap-4 py-4 px-3 shadow rounded-b-xl">
+              <form className="flex flex-col gap-4 py-4 px-4 shadow rounded-b-xl">
                 <input
                   type="text"
                   placeholder="Name"
-                  className="rounded-md px-4 py-2 bg-[#f4f7fa] outline-none text-[#00c3ff]"
+                  className="rounded-full px-4 py-2 bg-[#f4f7fa] outline-none text-[#00c3ff]"
                 />
                 <input
                   type="email"
                   placeholder="Email"
-                  className="rounded-md px-4 py-2 bg-[#f4f7fa] outline-none text-[#00c3ff]"
+                  className="rounded-full px-4 py-2 bg-[#f4f7fa] outline-none text-[#00c3ff]"
                 />
-                <div className="flex items-center gap-2 bg-[#f4f7fa] rounded-md px-4 py-2">
-                  <span className="flex items-center gap-1 text-gray-600">
-                    🇮🇳 +91
-                  </span>
+                <div className="flex items-center gap-2  ">
+                  <div className="flex bg-[#f4f7fa] px-3 py-2 text-nowrap rounded-full items-center gap-2 text-gray-600">
+                     <span>+91</span>                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/500px-Flag_of_India.svg.png" className="w-6 mr-1 rounded-sm" alt="India Flag" />
+                  </div>
                   <input
                     type="tel"
                     placeholder="Phone Number"
-                    className="flex-1 bg-transparent outline-none text-[#00c3ff]"
+                    className="w-full bg-[#f4f7fa] px-4 py-2 rounded-full   outline-none text-[#00c3ff]"
                   />
                 </div>
 
                 <div className="relative">
-                  <select className="w-full rounded-md px-4 py-2 bg-[#f4f7fa] appearance-none outline-none text-[#00c3ff]">
+                  <select className="w-full rounded-full px-4 py-2 bg-[#f4f7fa] appearance-none outline-none text-[#00c3ff]">
                     <option>Course you are interested in</option>
                   </select>
                   <FaChevronDown className="absolute top-3 right-4 text-gray-500" />
                 </div>
 
                 <div className="mt-1">
-                  <span className="text-[11px] text-blue-500 px-1">
+                  <span className="text-[11px] bg-gradient-to-r from-[#0E8DE9] to-[#29D1FD] rounded-t-md px-1 ml-8">
                     Learning Mode
                   </span>
-                  <div className="flex justify-between items-center rounded-md bg-[#f4f7fa] text-[#00c3ff] px-4 py-2 mt-1">
+                  <div className="flex justify-between items-center rounded-full bg-[#f4f7fa] text-[#00c3ff] px-4 py-2  ">
                     <label className="flex items-center gap-2">
                       <input type="radio" name="mode" defaultChecked />
                       <span>Online</span>
@@ -490,13 +494,14 @@ const Homepage = ({ handleOpen }) => {
 
                 <button
                   type="submit"
-                  className="mt-3 bg-[#009dff] hover:bg-[#0086d4] text-white py-2 rounded-md transition"
+                  className="mt-3 bg-[#00A6FF] hover:bg-[#0086d4] text-white py-2 rounded-full transition"
                 >
                   Sign Up
                 </button>
               </form>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -759,7 +764,8 @@ const Homepage = ({ handleOpen }) => {
         <ExploreSection />
       </section> */}
 
-      <WhyChooseUs />
+      {/* <TestimonialCarousel /> */}
+      {/* <WhyChooseUs /> */}
 
       {/* <section className="home-section-8">
         <h2 className="h-text-2">

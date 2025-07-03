@@ -1,0 +1,26 @@
+.custom-nav-tabs-bar {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  border-radius: 9999px;
+  /* padding: 4px; */
+  margin-bottom: 0;
+  gap: 8px;
+  z-index: 999;
+}
+.custom-nav-tab-btn {
+  border: none;
+  border-radius: 9999px;
+  padding: 16px 42px;
+  margin: 0 4px;
+  background: #fff;
+  color: #606480;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.custom-nav-tab-btn.active {
+  background: #1CB0F6;
+  color: #fff;
+}

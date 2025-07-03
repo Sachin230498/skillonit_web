@@ -6,6 +6,10 @@ import navprofile from "../../assets/images/profile-placeholder.svg";
 import navopen from "../../assets/images/navOpen.svg";
 import navclose from "../../assets/images/nav-Close.svg";
 import { useUserContext } from "../Helper/UserContext";
+import { Tabs } from "antd";
+import NavOptions from "./NavOptions";
+
+const { TabPane } = Tabs;
 
 const Navbar = ({ routes }) => {
   const location = useLocation();
@@ -24,12 +28,17 @@ const Navbar = ({ routes }) => {
     window.location.href = "/";
   };
 
-
   return (
-    <div className={`top-navbar `}>
-      <div className="navbar">
+    <div className={`top-navbar blur-effect`}>
+      <div className="navbar ">
         <Link to="/" className="nav-logo-link" reloadDocument>
-          <img src={logo} alt="skillonit" className="nav-logo" width={121} height={31} />
+          <img
+            src={logo}
+            alt="skillonit"
+            className="nav-logo"
+            width={121}
+            height={31}
+          />
         </Link>
         <div className="menu-bar-btn-div">
           <button
@@ -49,8 +58,7 @@ const Navbar = ({ routes }) => {
             <li>
               <Link
                 to="/about-us"
-                className={`nav-link ${isActiveLink("/about") ? "active" : ""
-                  }`}
+                className={`nav-link ${isActiveLink("/about") ? "active" : ""}`}
                 onClick={handleMenuToggle}
                 reloadDocument
               >
@@ -60,8 +68,9 @@ const Navbar = ({ routes }) => {
             <li>
               <Link
                 to="/courses"
-                className={`nav-link ${isActiveLink("/courses") ? "active" : ""
-                  }`}
+                className={`nav-link ${
+                  isActiveLink("/courses") ? "active" : ""
+                }`}
                 onClick={handleMenuToggle}
                 reloadDocument
               >
@@ -69,6 +78,18 @@ const Navbar = ({ routes }) => {
               </Link>
             </li>
             <li>
+              <Link
+                to="/courses"
+                className={`nav-link ${
+                  isActiveLink("/courses") ? "active" : ""
+                }`}
+                onClick={handleMenuToggle}
+                reloadDocument
+              >
+                Highlights
+              </Link>
+            </li>
+            {/* <li>
               <div className="dropdown source-dropdown">
                 <button
                   className={`dropbtn ${isActiveLink("/scholarship") ||
@@ -194,14 +215,15 @@ const Navbar = ({ routes }) => {
                   </div>
                 </div>
               </div>
-            </li>
+            </li> */}
             <li>
               <div className="dropdown source-dropdown">
                 <button
-                  className={`dropbtn ${isActiveLink("/refer-and-earn") || isActiveLink("/careers")
-                    ? "active"
-                    : ""
-                    }`}
+                  className={`dropbtn ${
+                    isActiveLink("/refer-and-earn") || isActiveLink("/careers")
+                      ? "active"
+                      : ""
+                  }`}
                 >
                   Resources
                   <img
@@ -210,28 +232,10 @@ const Navbar = ({ routes }) => {
                     className="header-arrow-img"
                   />
                 </button>
-                <div className="dropdown-content">
-                  <ul className="drop-ul">
-                    <li>
-                      <Link
-                        to="/refer-and-earn"
-                        className="drop-link"
-                        reloadDocument
-                      >
-                        Refer & Earn
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/blog" className="drop-link" reloadDocument>
-                        Blog
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/careers" className="drop-link" reloadDocument>
-                        Careers
-                      </Link>
-                    </li>
-                  </ul>
+                <div className="dropdown-content blur-effect">
+                  <div className="drop-ul">
+                   <NavOptions/>
+                  </div>
                 </div>
               </div>
 
@@ -277,7 +281,11 @@ const Navbar = ({ routes }) => {
                           </Link>
                         </li>
                         <li>
-                          <Link to="/careers" className="drop-link" reloadDocument>
+                          <Link
+                            to="/careers"
+                            className="drop-link"
+                            reloadDocument
+                          >
                             Careers
                           </Link>
                         </li>
@@ -288,21 +296,22 @@ const Navbar = ({ routes }) => {
               </div>
             </li>
 
-
-            {isLogin && (<li>
-
-              <Link
-                to={`/profile/${userDetails?.unId}`}
-                className={`nav-link desktop-hide ${isActiveLink(`/profile/${userDetails?.unId}`) ? "active" : ""
+            {isLogin && (
+              <li>
+                <Link
+                  to={`/profile/${userDetails?.unId}`}
+                  className={`nav-link desktop-hide ${
+                    isActiveLink(`/profile/${userDetails?.unId}`)
+                      ? "active"
+                      : ""
                   }`}
-                onClick={handleMenuToggle}
-                reloadDocument
-              >
-                Profile
-              </Link>
-            </li>)}
-
-
+                  onClick={handleMenuToggle}
+                  reloadDocument
+                >
+                  Profile
+                </Link>
+              </li>
+            )}
 
             {!isLogin && (
               <>
@@ -341,7 +350,11 @@ const Navbar = ({ routes }) => {
                     <div className="dropdown-content">
                       <ul className="drop-ul">
                         <li className="drop-link" style={{ cursor: "pointer" }}>
-                          <Link className="drop-link" to={`/profile/${userDetails?.unId}`} reloadDocument>
+                          <Link
+                            className="drop-link"
+                            to={`/profile/${userDetails?.unId}`}
+                            reloadDocument
+                          >
                             Profile
                           </Link>
                         </li>
