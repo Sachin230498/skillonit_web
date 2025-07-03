@@ -764,7 +764,7 @@ const Homepage = ({ handleOpen }) => {
         <ExploreSection />
       </section> */}
 
-      <TestimonialCarousel />
+      {/* <TestimonialCarousel /> */}
       {/* <WhyChooseUs /> */}
 
       {/* <section className="home-section-8">
