@@ -76,8 +76,8 @@ const TestimonialCarousel = () => {
           {testimonials.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col items-center text-center">
-                <video src={item.video} controls className="text-gray-700 mb-4 rounded-2xl" />
-                <p className="text-gray-700 mb-4 ">{item.testimonial}</p>
+                <video src={item.video} controls className="text-gray-700 mb-4 rounded-xl" />
+                <p className="text-gray-700 mb-4 shadow-sm rounded p-3">{item.testimonial}</p>
                 <div className="flex bg-white border-2 border-gray-100 items-center shadow-md rounded-lg p-2 gap-3 mt-6">
                   <img
                     src={item.image}

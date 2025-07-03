@@ -61,6 +61,7 @@ const routes = [
   "/contact-us",
   "/refund-policy",
   "/courses",
+  "/highlights",
   "/signup/:referralCode",
   "/workshops",
   "/workshops/:eventTitle",

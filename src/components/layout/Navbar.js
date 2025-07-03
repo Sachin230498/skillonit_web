@@ -29,7 +29,7 @@ const Navbar = ({ routes }) => {
   };
 
   return (
-    <div className={`top-navbar blur-effect`}>
+    <div className={`top-navbar `}>
       <div className="navbar ">
         <Link to="/" className="nav-logo-link" reloadDocument>
           <img
@@ -79,9 +79,9 @@ const Navbar = ({ routes }) => {
             </li>
             <li>
               <Link
-                to="/courses"
+                to="/highlights"
                 className={`nav-link ${
-                  isActiveLink("/courses") ? "active" : ""
+                  isActiveLink("/highlights") ? "active" : ""
                 }`}
                 onClick={handleMenuToggle}
                 reloadDocument

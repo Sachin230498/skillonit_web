@@ -1181,10 +1181,10 @@ const Courses = () => {
 
       {/* Header */}
       <div className="text-center my-10">
-        <div className="md:text-[55px] font-bold text-[#0F1F3E]">
+        <div className="  md:text-[55px] font-bold text-[#0F1F3E]">
           Build Real Skills.
         </div>
-        <p className="md:text-[70px] font-extrabold bg-gradient-to-r from-[#0E8DE9] to-[#29D1FD] bg-clip-text text-transparent">
+        <p className="  md:text-[70px]    font-extrabold bg-gradient-to-r from-[#0E8DE9] to-[#29D1FD] bg-clip-text text-transparent">
           Get Job-Ready.
         </p>
       </div>
@@ -1215,10 +1215,10 @@ const Courses = () => {
 
       {/* Soft Skills Section */}
       <div className="text-center mt-20 my-10">
-        <div className="md:text-[55px] font-bold text-[#0F1F3E]">
+        <div className="  md:text-[55px] font-bold text-[#0F1F3E]">
           Sharpen Your Soft
         </div>
-        <p className="md:text-[70px] font-extrabold bg-gradient-to-r from-[#0E8DE9] to-[#29D1FD] bg-clip-text text-transparent">
+        <p className="  md:text-[70px]    font-extrabold bg-gradient-to-r from-[#0E8DE9] to-[#29D1FD] bg-clip-text text-transparent">
           Skills Stand Out Confidently.
         </p>
       </div>

@@ -68,6 +68,10 @@ button:focus {
       animation: scroll-down 20s linear infinite;
     }
 
+    .marquee-down:hover {
+  animation-play-state: paused;
+}
+
     @keyframes scroll-down {
       0% {
         transform: translateY(-50%);

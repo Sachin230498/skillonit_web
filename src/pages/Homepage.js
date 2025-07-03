@@ -458,14 +458,14 @@ const Homepage = ({ handleOpen }) => {
                   placeholder="Email"
                   className="rounded-full px-4 py-2 bg-[#f4f7fa] outline-none text-[#00c3ff]"
                 />
-                <div className="flex items-center gap-2  ">
-                  <div className="flex bg-[#f4f7fa] px-3 py-2 text-nowrap rounded-full items-center gap-2 text-gray-600">
-                     <span>+91</span>                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/500px-Flag_of_India.svg.png" className="w-6 mr-1 rounded-sm" alt="India Flag" />
+                <div className="grid grid-cols-12 gap-2  ">
+                  <div className="col-span-4 flex justify-start bg-[#f4f7fa] px-3  py-2 text-nowrap rounded-full items-center gap-2 text-gray-600">
+                     <span>+91</span><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/500px-Flag_of_India.svg.png" className="w-6  rounded-sm" alt="India Flag" />
                   </div>
                   <input
                     type="tel"
                     placeholder="Phone Number"
-                    className="w-full bg-[#f4f7fa] px-4 py-2 rounded-full   outline-none text-[#00c3ff]"
+                    className="col-span-8 w-full bg-[#f4f7fa] px-4 py-2 rounded-full   outline-none text-[#00c3ff]"
                   />
                 </div>
 
@@ -956,9 +956,9 @@ const Homepage = ({ handleOpen }) => {
         <div className="elfsight-app-6aa10c8b-623d-4850-adcf-cf7d0a3bfb52" data-elfsight-app-lazy></div>
       </section> */}
 
-      <div className="text-center font-bold my-20">
-        <div className="text-[#0F1F3E] text-6xl ">Your Gateway to</div>
-        <div className="text-8xl h-32   mt-4 bg-gradient-to-r from-[#0E8DE9] to-[#29D1FD] bg-clip-text text-transparent">
+      <div className="text-center font-bold mu-5 md:my-20">
+        <div className="text-[#0F1F3E] text-3xl md:text-6xl ">Your Gateway to</div>
+        <div className="text-4xl md:text-8xl md:h-32   mt-4 bg-gradient-to-r from-[#0E8DE9] to-[#29D1FD] bg-clip-text text-transparent">
           Digital Excellence
         </div>
       </div>
